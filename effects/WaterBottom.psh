@@ -1,0 +1,31 @@
+// This pixel shader is used for rendering realistic water with reflection 
+// mapping (for over water stuff) and refraction mapping (for under water 
+// stuff)
+ps.1.4
+
+// Get the pixel position in screen space
+texcrd r0.xy, t0_dw.xyw
+// Get the data from the distortion map
+texld r1, t1
+// Get the normalized difference vector from the pixel to the camera
+texld r3, t2
+
+// The z component of r0 has to be initialized with something
+mov r0.z, -r0.y
+// Transform the pixel position correctly and apply the distortion map
+mad r0.xyz, r0, c0.x, c0.y
+mad_sat r0.xyz, r1_bias, c1.z, r0
+// Negate the y-component of r1 for the refraction map
+mul r1.xyz, r0, c2
+
+phase
+
+// Get the texel from the reflection map and the refraction map
+texld r0, r0.xyz
+texld r2, r1.xyz
+
+// Use the y-component of the normalized camera-pixel-difference-vector 
+// to interpolate between the reflection and the refraction map. The 
+// smaller the angle of view, the stronger the reflection.
+lrp r0.rgb, r3_bx2.y, r2, r0
++mov r0.a, c0

@@ -1,0 +1,28 @@
+// This effect is used to render two distorted and light mapped cloud 
+// layers
+Ultimate3DEffectFile 1.0
+
+// These are the files used by this effect
+VertexShaderFile effects\Clouds.vsh
+PixelShaderFile effects\Clouds.psh
+
+VSConstant 0 VS_CONST_WORLD_VIEW_PROJ_TRANS_1
+VSConstant 1 VS_CONST_WORLD_VIEW_PROJ_TRANS_2
+VSConstant 2 VS_CONST_WORLD_VIEW_PROJ_TRANS_3
+VSConstant 3 VS_CONST_WORLD_VIEW_PROJ_TRANS_4
+VSConstant 4 VS_CONST_CAMERA_POS
+
+// Vertex shader constant 5 has to be set up through Game Maker to pass 
+// texture coordinate offset values for the first diffuse map (zw)
+
+// This VS constant defines how often the sky texture gets repeated
+VSConstant 6 VS_CONST_MANUAL_SETTABLE 4 4 4 4
+
+// Vertex shader constant 7 has to be set up through Game Maker to pass 
+// texture coordinate offset values for the distortion map (xy) and the 
+// second diffuse map (zw)
+
+
+// This pixel shader constant defines how strong the cloud layers get 
+// distorted
+PSConstant 0 PS_CONST_MANUAL_SETTABLE 0.17 0.17 0 1

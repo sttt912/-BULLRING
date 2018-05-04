@@ -1,0 +1,31 @@
+// This pixel shader is used to render two distorted and light mapped 
+// cloud layers
+ps.1.4
+
+// Get the texture coordinate for the first diffuse map
+texcrd r0.xyz, t0
+// Get the texture coordinate for the second diffuse map
+texcrd r1.xyz, t1
+// Get the distortion value from the distortion map
+texld r2, t2
+
+// Calculate the distorted first texture coordinate
+mad r0.xyz, r2, c0, r0
+// Calculate the distorted second texture coordinate
+mad r1.xyz, r2, c0, r1
+
+phase
+
+// Get the correct texel from the first diffuse map
+texld r0, r0
+// Get the correct texel from the second diffuse map
+texld r1, r1
+// Get the correct texel from the light map
+texld r3, t3
+
+// Combine both cloud layers using linear interpolation
+lrp r0.xyz, 1-r1.a, r0, r1
+// Add together the alpha values of both diffuse maps
++add_sat r0.a, r0, r1
+// Apply the light map
+mul_sat r0.xyz, r0, r3

@@ -1,0 +1,27 @@
+// This effect is used for rendering realistic water with reflection 
+// mapping (for over water stuff) and refraction mapping (for under water 
+// stuff)
+Ultimate3DEffectFile 1.0 
+
+// These two files are used for this effect
+VertexShaderFile effects/Water.vsh
+PixelShaderFile effects/Water.psh
+
+VSConstant 0 VS_CONST_WORLD_VIEW_PROJ_TRANS_1 
+VSConstant 1 VS_CONST_WORLD_VIEW_PROJ_TRANS_2 
+VSConstant 2 VS_CONST_WORLD_VIEW_PROJ_TRANS_3
+VSConstant 3 VS_CONST_WORLD_VIEW_PROJ_TRANS_4
+
+// Vertex shader constant 5 has to be set by Game Maker to a texture 
+// coordinate offset for the distortion map (dependent on the time)
+
+VSConstant 6 VS_CONST_CAMERA_POS
+
+// This factor is needed to avoid that the reflection repeats on the water surface, 
+// because this needs to unpretty artifacts at the border of the screen
+VSConstant 7 VS_CONST_MANUAL_SETTABLE 0.99 0.99 1 1
+
+
+PSConstant 0 PS_CONST_MANUAL_SETTABLE 0.5 0.5 0.2 1.0
+PSConstant 1 PS_CONST_MANUAL_SETTABLE 0.5 0.5 0.1 1.0
+PSConstant 2 PS_CONST_MANUAL_SETTABLE 1.0 -1.0 1 1.0
