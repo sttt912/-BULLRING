@@ -1,0 +1,55 @@
+header {
+  version { "0.98" }
+  build { "2014.01.23" }
+}
+environment {
+  grid { 1 10 50 50 }
+  lighting {
+    intensity { 1 }
+    ambientintensity { 0.20000 }
+  }
+  framerate { 24 }
+  film {
+    size { 400 300 }
+    ratio { 4 3 }
+  }
+}
+object { "Water"
+  material { "default00"
+    surface {
+      /* RGB chunk no longer used */
+      rgb { 224 224 224 }
+      ambiant {
+        rgb { 224 224 224 }
+        factor { 0.30000 }
+      }
+      diffuse {
+        rgb { 224 224 224 }
+        factor { 0.70000 }
+      }
+      specular {
+        rgb { 255 255 255 }
+        factor { 0.20000 }
+      }
+      phongsize { 32 }
+    }
+  }
+  mesh {
+    name { "mesh01" }
+    material { "default00" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "default00" }
+    }
+    points {
+      (-1 0 -1) (-1 0 1) (1 0 1) (1 0 -1)
+    }
+    texcoords {
+      (1 0) (0 0) (0 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (1 2) (2 3) (3 0) )
+    }
+  }
+}
