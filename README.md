@@ -1,4 +1,5 @@
-<div align="center"><strong><a class="ulightbox" title="Нажмите для просмотра в полном размере..." href="http://gamemaker.ucoz.com/_fr/6/4736766.png" target="_blank" rel="noopener"><img src="http://gamemaker.ucoz.com/_fr/6/s4736766.jpg" alt="" align="" /></a></strong></div>
+![alt text](http://gamemaker.ucoz.com/_fr/6/s4736766.jpg)
+
 <p><br /><br /><strong>Название:</strong>&nbsp;Bullring<br /><strong>Жанр:</strong>&nbsp;3D Shooter<br /><strong>Движок:</strong>&nbsp;Game Maker,Ultimate3d<br /><br /></p>
 <div align="right"><strong>Описание:</strong></div>
 <p><br /><em>Незамысловатый шутер от первого лица, уровни которого выполнены в стиле арены. Большую часть времени от игрока требуется жать на курок, хоть иногда надо будет и пораскинуть мозгами.Также для вас и ваших друзей был создан сетевой режим, который поможет вам расслабиться.</em><br /><br /><em>Скриншоти :</em></p>
