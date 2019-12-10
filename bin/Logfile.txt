@@ -1,0 +1,50 @@
+Log file created on 02/10/19 13:58:39.
+This log file has been created by Ultimate 3D 2.1.1 (fixed DLL built on 2nd of January 2009).
+Successfully created a mixed vertex processing device.
+Ultimate 3D has created a Direct3D 8.1 device object successfully.
+With the created device 8 texture stages are supported, cube textures are supported, pixel shader model 1.4 and lower is supported and no antialiasing is being used.
+A new camera with index 0 has been created.
+A new camera with index 32 has been created.
+A new camera with index 33 has been created.
+A new camera with index 34 has been created.
+A new camera with index 35 has been created.
+A new camera with index 36 has been created.
+A new camera with index 37 has been created.
+Started loading a model called "SkyTetrahedon" from a resource.
+Successfully loaded the meshes of the *.u3d file.
+Successfully loaded the materials of the *.u3d file.
+Loading the model called "SkyTetrahedon" from a resource has succeeded.
+Started loading a model called "SkyBox" from a resource.
+Successfully loaded the meshes of the *.u3d file.
+Successfully loaded the materials of the *.u3d file.
+Loading the model called "SkyBox" from a resource has succeeded.
+Started loading a model called "SkySphere" from a resource.
+Successfully loaded the meshes of the *.u3d file.
+Successfully loaded the materials of the *.u3d file.
+Loading the model called "SkySphere" from a resource has succeeded.
+Successfully prepared the font "Times New Roman" for being used.
+The post screen shader, which uses the vertex shader effects/PostScreenEffects/PostBloom.vsh and the pixel shader effects/PostScreenEffects/PostBloom.psh has been created successfully.
+Trying to load the model file "models\weapons/v_ak47.3ds".
+Successfully parsed the *.3ds file.
+The model file "models\weapons/v_ak47.3ds" has been loaded successfully (with 5 meshes, 4 materials and 0 bones).
+Trying to load the model file "models\weapons/pistol.ms3d".
+Successfully parsed the the *.ms3d file.
+The model file "models\weapons/pistol.ms3d" has been loaded successfully (with 1 meshes, 5 materials and 0 bones).
+Trying to load the model file "models\weapons/knife.3ds".
+Successfully parsed the *.3ds file.
+The model file "models\weapons/knife.3ds" has been loaded successfully (with 1 meshes, 1 materials and 0 bones).
+Started creating a terrain object.
+The terrain object has been initialized successfully.
+All textures have been applied to a terrain object successfully.
+Trying to load the model file "models\Water.an8".
+Successfully parsed the the *.an8 file.
+The model file "models\Water.an8" has been loaded successfully (with 1 meshes, 1 materials and 0 bones).
+Trying to load the model file "models\cloud.3ds".
+Successfully parsed the *.3ds file.
+The model file "models\cloud.3ds" has been loaded successfully (with 1 meshes, 2 materials and 0 bones).
+Trying to load the model file "models\tree\palm_frag.3DS".
+Successfully parsed the *.3ds file.
+The model file "models\tree\palm_frag.3DS" has been loaded successfully (with 2 meshes, 2 materials and 0 bones).
+Trying to load the model file "models\nps/zombi.ms3d".
+Successfully parsed the the *.ms3d file.
+The model file "models\nps/zombi.ms3d" has been loaded successfully (with 1 meshes, 2 materials and 24 bones).
